@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7759431e303e2d722a264a8a991a9e84",
+    "content-hash": "ee619fe505fe981f7063da4e2a220e41",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -353,6 +353,77 @@
                 }
             ],
             "time": "2020-11-24T19:55:57+00:00"
+        },
+        {
+            "name": "dvdoug/boxpacker",
+            "version": "3.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dvdoug/BoxPacker.git",
+                "reference": "175f8ab63961975ff1fe52df1379b2c28742a9cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dvdoug/BoxPacker/zipball/175f8ab63961975ff1fe52df1379b2c28742a9cd",
+                "reference": "175f8ab63961975ff1fe52df1379b2c28742a9cd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1||^8.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.7",
+                "dvdoug/behat-code-coverage": "^5.0",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "monolog/monolog": "^1.0||^2.0",
+                "phpunit/phpunit": "^7.5.20||^8.5.13||^9.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DVDoug\\BoxPacker\\": "src/",
+                    "DVDoug\\BoxPacker\\Test\\": "tests/Test"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Doug Wright",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An implementation of the 3D (actually 4D) bin packing/knapsack problem (aka creating parcels by putting items into boxes)",
+            "homepage": "http://boxpacker.io/",
+            "keywords": [
+                "bin packing",
+                "binpacking",
+                "box",
+                "boxes",
+                "boxpacking",
+                "container",
+                "knapsack",
+                "packaging",
+                "packing",
+                "parcel",
+                "parcelpacking",
+                "shipping"
+            ],
+            "support": {
+                "issues": "https://github.com/dvdoug/BoxPacker/issues",
+                "source": "https://github.com/dvdoug/BoxPacker/tree/3.9.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dvdoug",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-04T17:20:38+00:00"
         },
         {
             "name": "egulias/email-validator",
