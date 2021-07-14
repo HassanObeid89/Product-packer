@@ -7,6 +7,12 @@
     <title>item</title>
 </head>
 <body>
-    <h1>here is the fetched item</h1>
+    <h1>here is the fetched item </h1><br/>
+
+    {{$data ['id']}}
+
+    
+   
+
 </body>
 </html>

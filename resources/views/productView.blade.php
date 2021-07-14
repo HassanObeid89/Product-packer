@@ -4,9 +4,9 @@
 <link href="{{ mix('css/app.css') }}" rel='stylesheet'>
 <body>
     
-    <form action="item.blade.php" method="GET">
+    <form action="submit" method="GET">
         Article number <input type="number" name='articleNumber' value="" >
-        <input type="submit" name="submit" value="Submit">
+        <button type='submit'>Submit</button>
         
     </form>
 </body>
