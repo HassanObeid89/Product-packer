@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Articles;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('productView');
 });
 
-Route::get('/{articleNumber}', function () {
-    return view('item');
-});
+
+
+Route::get('submit', [Articles::class, "fetch_articles"]);
