@@ -1,4 +1,5 @@
 module.exports = {
+
   purge: [
     './resources/views/**/*.blade.php'
   ],
@@ -7,7 +8,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['motion-safe'],
+      
+    },
   },
   plugins: [],
 }
