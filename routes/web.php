@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('productView');
 });
 
-
-
-Route::get('submit', [Articles::class, "fetch_articles"]);
+Route::get('productView', [Articles::class, "fetch_articles"]);
