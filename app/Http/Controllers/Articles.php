@@ -12,18 +12,20 @@ class Articles extends Controller
 
     public function fetch_articles(Request $req)
     {
-
+        
         $articleNumber = (int) $req->articleNumber;
 
         $url = "https://www.partykungen.se/$articleNumber.json";
         $data = Http::get($url)->json();
-        if (!null) {
+
+        if ($data === null) {
+            //abort(500);
+            return view("validation-error");
+        }else{
             return $this->packItems($data);
-        } else {
-            alert('opppsss!!!');
         }
 
-    }
+    }    
 
     public function packItems($data)
     {
@@ -52,7 +54,7 @@ class Articles extends Controller
             }
         }
 
-        //return view("packer-card", ['data'=>$data]);
+    
 
         return view("productView", array(
             'width' => $width,

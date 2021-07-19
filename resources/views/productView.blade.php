@@ -24,17 +24,20 @@
                 focus:ring-1 focus:ring-indigo-500 mb-8
                  " />
                     
-                    <button wire:click="$set('show', true)" type='submit' class="w-2/5 py-2
+                    <button wire:click='getData' id="" type='submit' class="w-2/5 py-2
                 rounded-2xl text-lg font-bold text-black bg-purple-400
                 hover:bg-purple-300
-                ">Submit</button>
+                ">
+                 Submit</button>
+                <div wire:loading>loading...</div>
                 </div>
-
+                
             </form>
+            
         </div>
 
         @if ($show ?? '' == true)
-
+        
         @livewire('packer-card', [
             'itemName' => $itemName,
             'width' => $width,
@@ -42,6 +45,7 @@
             'depth' => $depth,
             'articleNumber' => $articleNumber,
             'boxSize' => $boxSize,
+            'show' => $show,
             ])
         
         @endif

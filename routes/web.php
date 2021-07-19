@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('productView', [Articles::class, "fetch_articles"]);
+
